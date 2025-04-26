@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notification Example</title>
+</head>
+<body>
+
+<button onclick="showNotification('Everything worked fine.', 'success')">Success</button>
+<button onclick="showNotification('Something went wrong.', 'fail')">Fail</button>
+<button onclick="showNotification('This is your warning.', 'warning')">Warning</button>
+
+<script type="module">
+    import { showNotification } from './notification.js';
+    window.showNotification = showNotification;
+</script>
+
+</body>
+</html>
